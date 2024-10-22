@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "HN Story Summarizer",
+  "version": "1.0",
+  "description": "Adds a summary line to each story on the Hacker News homepage",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://news.ycombinator.com/*",
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://news.ycombinator.com/"],
+      "js": ["content.js"]
+    }
+  ]
+}
