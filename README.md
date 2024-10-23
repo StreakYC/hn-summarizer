@@ -4,7 +4,7 @@ Similar to iOS notification previews, this **Chrome Extension** summarizes the c
 https://github.com/user-attachments/assets/b0c99e42-cfe6-401b-a0fc-0657380f4195
 
 
-_Install instructions:_
+### Install instructions
 1. Download or clone the repo
 2. Goto https://aistudio.google.com/ and get an API key
 3. Goto chrome://extensions and turn on developer mode
